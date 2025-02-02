@@ -20,4 +20,5 @@
 // 	var facterage int 
 // 	fmt.Scan(&facterage)
 // 	fmt.Println(age+facterage)
-// }
+//
+// } 
