@@ -16,11 +16,11 @@ func main() {
     for i := 0; i < 5; i++ {  // Initialization, Condition, Increment
         fmt.Println(i)        // Prints numbers from 0 to 4
     }
-}```
+}
 
-## for as a while Loop
+2. for as a while Loop
+In Go, you can use the for loop like a while loop by omitting the initialization and post statement
 
-```go
 package main
 import "fmt"
 
@@ -30,12 +30,11 @@ func main() {
         fmt.Println(j)
         j++            // Increment inside the loop
     }
-}```
+}
 
-## Infinite for Loop
+3. Infinite for Loop
+When all three components are omitted, the loop runs indefinitely. To exit the loop, you must use a break statement.
 
-=> When all three components are omitted, the loop runs indefinitely. To exit the loop, you must use a break statement.
-```go
 package main
 import "fmt"
 
@@ -48,30 +47,25 @@ func main() {
             break
         }
     }
-}```
+}
 
-## for Loop with range
-
-=>The range keyword allows you to iterate over slices, arrays, maps, strings, and channels efficiently.
-
+4. for Loop with range
+The range keyword allows you to iterate over slices, arrays, maps, strings, and channels efficiently.
 
 package main
 import "fmt"
 
 func main() {
     languages := []string{"Go", "Python", "Java"}
-
     for index, value := range languages {
         fmt.Println(index, value)
     }
 }
 
-## Using break and continue Statements
+5. Using break and continue Statements
+break : Terminates the loop immediately.
+continue : Skips the current iteration and moves to the next one.
 
-# break: Terminates the loop immediately.
-# continue: Skips the current iteration and moves to the next one.
-
-```go
 package main
 import "fmt"
 
@@ -85,4 +79,4 @@ func main() {
         }
         fmt.Println(i)
     }
-}```
+}
