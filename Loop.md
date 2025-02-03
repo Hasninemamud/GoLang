@@ -17,10 +17,15 @@ func main() {
         fmt.Println(i)        // Prints numbers from 0 to 4
     }
 }
+```
 
-2. for as a while Loop
-In Go, you can use the for loop like a while loop by omitting the initialization and post statement
+---
 
+## 2. `for` as a `while` Loop
+
+You can omit the initialization and post statements, effectively creating a loop that behaves like a `while` loop.
+
+```go
 package main
 import "fmt"
 
@@ -31,10 +36,15 @@ func main() {
         j++            // Increment inside the loop
     }
 }
+```
 
-3. Infinite for Loop
-When all three components are omitted, the loop runs indefinitely. To exit the loop, you must use a break statement.
+---
 
+## 3. Infinite `for` Loop
+
+When all three components are omitted, the loop runs indefinitely. To exit the loop, you must use a `break` statement.
+
+```go
 package main
 import "fmt"
 
@@ -48,24 +58,35 @@ func main() {
         }
     }
 }
+```
 
-4. for Loop with range
-The range keyword allows you to iterate over slices, arrays, maps, strings, and channels efficiently.
+---
 
+## 4. `for` Loop with `range`
+
+The `range` keyword allows you to iterate over slices, arrays, maps, strings, and channels efficiently.
+
+```go
 package main
 import "fmt"
 
 func main() {
     languages := []string{"Go", "Python", "Java"}
+
     for index, value := range languages {
         fmt.Println(index, value)
     }
 }
+```
 
-5. Using break and continue Statements
-break : Terminates the loop immediately.
-continue : Skips the current iteration and moves to the next one.
+---
 
+## 5. Using `break` and `continue` Statements
+
+- **`break`**: Terminates the loop immediately.
+- **`continue`**: Skips the current iteration and moves to the next one.
+
+```go
 package main
 import "fmt"
 
@@ -80,3 +101,15 @@ func main() {
         fmt.Println(i)
     }
 }
+```
+
+---
+
+## Summary
+
+Go's `for` loop can handle a variety of use cases, including:
+- Traditional `for` loops (with initialization, condition, and increment)
+- `while`-like loops
+- Infinite loops with controlled termination
+- Iteration over collections using `range`
+- Loop control using `break` and `continue`
