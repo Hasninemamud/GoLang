@@ -54,7 +54,7 @@ func main() {
 
 =>The range keyword allows you to iterate over slices, arrays, maps, strings, and channels efficiently.
 
-```go
+
 package main
 import "fmt"
 
@@ -64,7 +64,7 @@ func main() {
     for index, value := range languages {
         fmt.Println(index, value)
     }
-}```
+}
 
 ## Using break and continue Statements
 
